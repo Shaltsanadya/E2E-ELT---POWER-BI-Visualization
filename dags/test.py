@@ -9,7 +9,7 @@ import psycopg2
 
 
 default_args = {
-    "owner": "salsa",
+    "owner": "yourname",
     "retries": 2,
     "retry_delay": timedelta(minutes=5),
 } 
@@ -19,7 +19,7 @@ df = pd.read_excel("/opt/airflow/dags/Sales_Data_Full.xlsx")
 def extract_data():
     conn = psycopg2.connect(
         user="postgres",
-        password="Salsha12",
+        password="yourpassword",
         host="postgres",
         port="5432",
         database="postgres",
@@ -113,7 +113,7 @@ def extract_data():
 def forecast_data():
     conn = psycopg2.connect(
         user="postgres",
-        password="Salsha12",
+        password="yourpassword",
         host="postgres",
         port="5432",
         database="postgres"
@@ -190,7 +190,7 @@ def forecast_data():
 
     conn = psycopg2.connect(
         user="postgres",
-        password="Salsha12",
+        password="yourpassword",
         host="postgres",
         port="5432",
         database="postgres"
@@ -292,7 +292,7 @@ def forecast_data():
 
     conn = psycopg2.connect(
         user="postgres",
-        password="Salsha12",
+        password="yourpassword",
         host="postgres",
         port="5432",
         database="postgres"

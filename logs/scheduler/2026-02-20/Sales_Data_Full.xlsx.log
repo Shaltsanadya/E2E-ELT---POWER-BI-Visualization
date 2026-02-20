@@ -538,3 +538,23 @@
 [2026-02-20T05:22:37.629+0000] {logging_mixin.py:188} INFO - [2026-02-20T05:22:37.629+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/Sales_Data_Full.xlsx
 [2026-02-20T05:22:37.638+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sales_Data_Full.xlsx
 [2026-02-20T05:22:37.650+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sales_Data_Full.xlsx took 0.028 seconds
+[2026-02-20T05:23:14.002+0000] {processor.py:161} INFO - Started process (PID=538) to work on /opt/airflow/dags/Sales_Data_Full.xlsx
+[2026-02-20T05:23:14.004+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sales_Data_Full.xlsx for tasks to queue
+[2026-02-20T05:23:14.015+0000] {logging_mixin.py:188} INFO - [2026-02-20T05:23:14.014+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/Sales_Data_Full.xlsx
+[2026-02-20T05:23:14.034+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sales_Data_Full.xlsx
+[2026-02-20T05:23:14.072+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sales_Data_Full.xlsx took 0.079 seconds
+[2026-02-20T05:23:50.035+0000] {processor.py:161} INFO - Started process (PID=546) to work on /opt/airflow/dags/Sales_Data_Full.xlsx
+[2026-02-20T05:23:50.036+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sales_Data_Full.xlsx for tasks to queue
+[2026-02-20T05:23:50.038+0000] {logging_mixin.py:188} INFO - [2026-02-20T05:23:50.038+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/Sales_Data_Full.xlsx
+[2026-02-20T05:23:50.056+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sales_Data_Full.xlsx
+[2026-02-20T05:23:50.073+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sales_Data_Full.xlsx took 0.045 seconds
+[2026-02-20T05:24:25.867+0000] {processor.py:161} INFO - Started process (PID=554) to work on /opt/airflow/dags/Sales_Data_Full.xlsx
+[2026-02-20T05:24:25.868+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sales_Data_Full.xlsx for tasks to queue
+[2026-02-20T05:24:25.870+0000] {logging_mixin.py:188} INFO - [2026-02-20T05:24:25.869+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/Sales_Data_Full.xlsx
+[2026-02-20T05:24:25.881+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sales_Data_Full.xlsx
+[2026-02-20T05:24:25.897+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sales_Data_Full.xlsx took 0.036 seconds
+[2026-02-20T05:25:00.906+0000] {processor.py:161} INFO - Started process (PID=562) to work on /opt/airflow/dags/Sales_Data_Full.xlsx
+[2026-02-20T05:25:00.911+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sales_Data_Full.xlsx for tasks to queue
+[2026-02-20T05:25:00.912+0000] {logging_mixin.py:188} INFO - [2026-02-20T05:25:00.912+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/Sales_Data_Full.xlsx
+[2026-02-20T05:25:00.924+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sales_Data_Full.xlsx
+[2026-02-20T05:25:00.942+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sales_Data_Full.xlsx took 0.041 seconds

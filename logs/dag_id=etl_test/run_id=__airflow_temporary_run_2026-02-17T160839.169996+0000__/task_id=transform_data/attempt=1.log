@@ -1,0 +1,50 @@
+[2026-02-17T16:11:42.458+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_test.transform_data __airflow_temporary_run_2026-02-17T16:08:39.169996+00:00__ [queued]>
+[2026-02-17T16:11:42.625+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_test.transform_data __airflow_temporary_run_2026-02-17T16:08:39.169996+00:00__ [queued]>
+[2026-02-17T16:11:42.641+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-02-17T16:11:42.985+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): transform_data> on 2026-02-16 00:00:00+00:00
+[2026-02-17T16:11:43.017+0000] {standard_task_runner.py:60} INFO - Started process 12202 to run task
+[2026-02-17T16:11:43.088+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'etl_test', 'transform_data', '__airflow_temporary_run_2026-02-17T16:08:39.169996+00:00__', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmpm2coblxr']
+[2026-02-17T16:11:43.147+0000] {standard_task_runner.py:88} INFO - Job 22: Subtask transform_data
+[2026-02-17T16:11:43.791+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_test.transform_data __airflow_temporary_run_2026-02-17T16:08:39.169996+00:00__ [running]> on host 3847ae315981
+[2026-02-17T16:11:45.710+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='salsa' AIRFLOW_CTX_DAG_ID='etl_test' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2026-02-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='__airflow_temporary_run_2026-02-17T16:08:39.169996+00:00__'
+[2026-02-17T16:11:45.755+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-02-17T16:11:45.771+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'dbt run --select datamart_sales --profiles-dir /home/airflow/.dbt --project-dir /opt/airflow/dbt_project']
+[2026-02-17T16:11:45.887+0000] {subprocess.py:86} INFO - Output:
+[2026-02-17T16:12:07.668+0000] {subprocess.py:93} INFO - [0m16:12:07  Running with dbt=1.9.0-b2
+[2026-02-17T16:12:12.679+0000] {subprocess.py:93} INFO - [0m16:12:12  Registered adapter: postgres=1.8.2
+[2026-02-17T16:12:21.183+0000] {subprocess.py:93} INFO - [0m16:12:21  Found 3 models, 4 data tests, 423 macros
+[2026-02-17T16:12:21.205+0000] {subprocess.py:93} INFO - [0m16:12:21
+[2026-02-17T16:12:21.218+0000] {subprocess.py:93} INFO - [0m16:12:21  Concurrency: 1 threads (target='dev')
+[2026-02-17T16:12:21.224+0000] {subprocess.py:93} INFO - [0m16:12:21
+[2026-02-17T16:12:22.147+0000] {subprocess.py:93} INFO - [0m16:12:22  1 of 1 START sql table model public.datamart_sales ............................. [RUN]
+[2026-02-17T16:12:23.134+0000] {subprocess.py:93} INFO - [0m16:12:23  1 of 1 OK created sql table model public.datamart_sales ........................ [[32mSELECT 2192[0m in 0.97s]
+[2026-02-17T16:12:23.208+0000] {subprocess.py:93} INFO - [0m16:12:23
+[2026-02-17T16:12:23.213+0000] {subprocess.py:93} INFO - [0m16:12:23  Finished running 1 table model in 0 hours 0 minutes and 1.98 seconds (1.98s).
+[2026-02-17T16:12:23.572+0000] {subprocess.py:93} INFO - [0m16:12:23
+[2026-02-17T16:12:23.576+0000] {subprocess.py:93} INFO - [0m16:12:23  [32mCompleted successfully[0m
+[2026-02-17T16:12:23.581+0000] {subprocess.py:93} INFO - [0m16:12:23
+[2026-02-17T16:12:23.585+0000] {subprocess.py:93} INFO - [0m16:12:23  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2026-02-17T16:12:25.304+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2026-02-17T16:12:25.317+0000] {process_utils.py:131} INFO - Sending Signals.SIGTERM to group 12202. PIDs of all processes in the group: [12203, 12205, 12202]
+[2026-02-17T16:12:25.318+0000] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 12202
+[2026-02-17T16:12:25.319+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-02-17T16:12:25.321+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2026-02-17T16:12:25.359+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 203, in execute
+    result = self.subprocess_hook.run_command(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/subprocess.py", line 91, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b""):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2452, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2026-02-17T16:12:25.387+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_test, task_id=transform_data, execution_date=20260216T000000, start_date=20260217T161142, end_date=20260217T161225
+[2026-02-17T16:12:25.412+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=12205, status='terminated', started='16:12:12') (12205) terminated with exit code None
+[2026-02-17T16:12:25.468+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 22 for task transform_data ((sqlite3.IntegrityError) FOREIGN KEY constraint failed
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('transform_data', 'etl_test', '__airflow_temporary_run_2026-02-17T16:08:39.169996+00:00__', -1, '2026-02-17 16:11:42.490977', '2026-02-17 16:12:25.385715', 42)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 12202)
+[2026-02-17T16:12:25.549+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=12202, status='terminated', exitcode=1, started='16:11:42') (12202) terminated with exit code 1
+[2026-02-17T16:12:25.550+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=12203, status='terminated', started='16:11:45') (12203) terminated with exit code None

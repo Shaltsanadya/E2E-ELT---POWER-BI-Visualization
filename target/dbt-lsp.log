@@ -1,0 +1,32 @@
+==================== 2026-02-16T09:17:27.838029Z | a2b69f0f-51d2-409c-bd6a-5804e60b0ef7 ====================
+09:17:27.838112 [info ]: Starting dbt LSP server
+09:17:27.838144 [info ]: Connecting to LSP client on port 8000
+09:17:27.903187 [info ]: Successfully connected to LSP client
+09:17:27.903213 [info ]: Creating LSP service...
+09:17:28.383885 [info ]: Creating LSP server...
+09:17:28.383925 [info ]: Starting LSP server...
+09:17:28.703392 [info ]: Started loading project
+09:17:28.716299 [info ]: Loading ~/.dbt/profiles.yml
+09:17:29.339165 [info ]: Loading ~/.dbt/profiles.yml
+09:17:29.481466 [debug]:    Started loading packages
+09:17:29.486481 [debug]:     Loaded [  0.01s] packages
+09:17:29.486533 [debug]:    Started loading internal packages
+09:17:29.735819 [debug]:     Loaded [  0.25s] internal packages
+09:17:29.736570 [info ]: Started parsing
+09:17:30.219431 [info ]: Finished loading project [  1.52s]
+09:17:30.234301 [info ]: Finished parsing [  0.50s]
+09:17:30.234788 [info ]: Cached model count updated: 0 models (estimate)
+09:17:30.234821 [info ]: Cached model count updated: 0 models (accurate)
+09:17:30.234858 [info ]: Started scheduling
+09:17:30.234932 [info ]: Finished scheduling [  0.00s]
+09:17:30.237144 [info ]: Started deferring state
+09:17:30.237191 [info ]: Finished deferring state [  0.00s]
+09:17:30.401935 [info ]: Started downloading schemas
+09:17:30.402057 [debug]: Started downloading relations
+09:17:30.402113 [debug]: Finished downloading relations [  0.00s]
+09:17:30.402146 [info ]: Finished downloading schemas [  0.00s]
+09:17:32.757027 [info ]: Started building task graph
+09:17:32.757157 [info ]: Finished building task graph [  0.00s]
+09:17:32.767597 [info ]: Cached model count updated: 0 models (accurate)
+09:18:18.577588 [info ]: Started loading project
+09:18:18.579131 [info ]: Finished loading project [  0.00s]

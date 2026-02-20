@@ -1,0 +1,25 @@
+services:
+  airflow:
+    image: apache/airflow:2.8.1
+    container_name: airflow
+    ports:
+      - "8080:8080"
+    command: standalone
+    volumes:
+      - "C:/Users/user/Downloads/Test y ventures/dags:/opt/airflow/dags"
+      - "C:/Users/user/Downloads/Test y ventures/dbt_project:/opt/airflow/dbt_project"
+      - "./logs:/opt/airflow/logs"
+      - "./plugins:/opt/airflow/plugins"
+    depends_on:
+      - postgres
+
+
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    ports:
+    - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Salsha12
+      POSTGRES_DB: postgres
